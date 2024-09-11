@@ -1,3 +1,4 @@
+/* Navigation */
 nav {
     background-color: #333;
     padding: 25px 20px;
@@ -33,4 +34,9 @@ nav a:hover {
 
 .outlet-container {
     padding: 20px;
+}
+
+/* Home */
+h1 {
+    text-align: center;
 }

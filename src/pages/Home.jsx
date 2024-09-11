@@ -1,9 +1,10 @@
-//import Header from '../components/Header'
+//import Header from '../components/Header' USELESS
 import BookList from '../components/BookList'
 
 const Home = () => {
     return ( 
         <>
+        <h1>Alle Boeken</h1>
         <BookList />
         </>
      );
