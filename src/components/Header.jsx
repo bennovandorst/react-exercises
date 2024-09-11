@@ -1,3 +1,5 @@
+// Dit ding lijkt me letterlijk useless omdat ik een Navigation file heb... 
+
 const Header = () => {
     return ( 
         <>
