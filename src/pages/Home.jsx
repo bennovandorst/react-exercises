@@ -1,4 +1,3 @@
-//import Header from '../components/Header' USELESS
 import BookList from '../components/BookList'
 
 const Home = () => {
