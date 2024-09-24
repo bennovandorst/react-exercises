@@ -1,10 +1,11 @@
 import './App.css'
+import MenuList from './components/MenuList'
 
 function App() {
 
   return (
     <>
-      <h1>jason nerd</h1>
+      <MenuList />
     </>
   )
 }

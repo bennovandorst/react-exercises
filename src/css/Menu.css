@@ -1,0 +1,21 @@
+img {
+    width: 25%;
+    height: 25%;
+    border: 2px solid #C69F63;
+}
+
+.price {
+    font-family:'Times New Roman', Times, serif;
+    color: #C69F63;
+}
+
+.menuTitle {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #C69F63;
+}
+
+.title {
+    font-weight: w00;
+    border-bottom: 0.5px solid grey;
+}
