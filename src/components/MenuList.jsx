@@ -12,19 +12,21 @@ const MenuList = () => {
 
     return ( 
         <>
-        <div className="menuTitle">
-            <h1>Our Menu</h1>
-        </div>
-        <div className="menuList">
-            {menuItems.map((item) => (
-                <Menu 
-                  key={item.id}
-                  title={capitalizeTitle(item.title)}
-                  price={item.price}
-                  desc={item.desc}
-                  img={item.img}
-                />
-            ))}
+        <div className="menuContainer">
+            <div className="menuTitle">
+                <h1>Our Menu</h1>
+            </div>
+            <div className="menuList">
+                {menuItems.map((item) => (
+                    <Menu 
+                    key={item.id}
+                    title={item.title}
+                    price={item.price}
+                    desc={capitalizeTitle(item.desc)}
+                    img={item.img}
+                    />
+                ))}
+            </div>
         </div>
         </>
      );
