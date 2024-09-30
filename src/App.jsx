@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import './App.css'
+import CreateMessage from './components/CreateMessage'
+import MessageList from './components/MessageList'
 
 function App() {
+  const [textInput, setTextInput] = useState('');
+  const [message, setMessage] = useState([]);
+  let name = 'Jasontje'
+
   return (
     <>
-      <h1>Hoi Jason</h1>
+      <CreateMessage setTextInput={setTextInput} textInput={textInput} setMessage={setMessage} />
+      <MessageList name={name} message={message}/>
     </>
   )
 }
