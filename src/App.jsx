@@ -26,20 +26,31 @@ function App() {
   };
 
   const handleSearch = () => setCity(searchInput);
+
   return (
-    <>
-        <div className='search'>
+    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <div className="mb-4">
           <input 
             type="text"
             placeholder="Zoek een stad op"
             value={searchInput}
             onChange={handleChange}
             name="search"
+            className="w-full p-2 border border-gray-300 rounded-md"
           />
-          <button onClick={handleSearch}>Search</button>
         </div>
-      <WeatherInfo weatherData={weatherData} />
-    </>
+        <button 
+          onClick={handleSearch}
+          className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+        >
+          Search
+        </button>
+      </div>
+      <div className="mt-6 w-full max-w-md">
+        <WeatherInfo weatherData={weatherData} />
+      </div>
+    </div>
   );
 }
 
